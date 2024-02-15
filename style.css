@@ -1,0 +1,85 @@
+body {
+    margin: 0;
+    background-color: #ef999f;
+    display: flex;
+    font-family: sans-serif;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+#red {
+    background-color: rgb(255, 0, 0);
+    width: 360px;
+    height: 450px;
+    transform: rotate(-10deg);
+    z-index: -1;
+    margin-right: -165px;
+    /* Dodane, aby przesunąć #red wyżej */
+}
+
+#form {
+    padding-top: 20px;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    width: 260px;
+    height: 360px;
+    padding-left: 30px;
+    font-size: 30px;
+    font-weight: 600;
+    margin-left: -165px;
+    margin-top: -80px;
+
+}
+
+#form-btn {
+    margin: 100px 0 30px 0;
+    display: flex;
+    gap: 10px;
+    flex-direction: row;
+    padding-right: 30px;
+    justify-content: space-between;
+    color: red;
+
+}
+
+#move {
+    transition: top 0.3s ease, left 0.3s ease;
+}
+
+
+#form-btn button {
+    padding: 5px 20px;
+    border: 1px solid rgb(117, 117, 117);
+    background-color: white;
+    font-size: 18px;
+    font-family: serif !important;
+    font-weight: 600;
+    color: red;
+
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    cursor: pointer;
+}
+
+#heart {
+    position: relative;
+    width: 100px;
+    height: 90px;
+}
+
+#heart:before,
+#heart:after {
+    position: absolute;
+    content: "";
+    left: 50px;
+    top: 0;
+    width: 50px;
+    height: 80px;
+    background: rgb(216, 156, 228);
+    border-radius: 50px 50px 0 0;
+    transform: rotate(-45deg);
+    transform-origin: 0 100%;
+}
